@@ -84,7 +84,6 @@ avoid duplicates.
 2. To improve this relatively low accuracy, we replaced the initial encoder-decoder model witha residual network model that includes positional information. However, the added positional
 features did not contribute meaningfully to accuracy improvement.
 
-<img width="1230" alt="image" src="https://github.com/user-attachments/assets/97822ca9-08f3-41e1-967e-0cd4595288c4" />
 
 ➢ Future Work
 1. By using the positional data learned from the 3D model, we adopt a 3D-based learning approach instead of training on individual projection views.

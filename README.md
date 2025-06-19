@@ -21,7 +21,8 @@
 
 (2) Dimensioning (The process of predicting dimensions to 2D)
 
-![image](https://github.com/user-attachments/assets/9e30e317-f449-4e44-b0e3-61541542d043)
+![image](https://github.com/user-attachments/assets/ac61f2b0-fc82-4407-9d47-4855d93d50f9)
+
 
 
 ## 2 - 1. Learning Data & Method (Projection Step)
@@ -32,20 +33,28 @@
 
 ➢ Method 
 1) Automatically generate six orthogonal views from a 3D CAD model by CAD APIs(①Front, ②Back, ③Top, ④Bottom, ⑤Left, ⑥Right)
+   
 2) By learning the projection views with high matching accuracy, the model is trained to apply similar projection views when encountering similar 3D shapes.
+   
 3) learning data for machine learning.
 
 The process of converting 3D into 2D that best represents 3D
+
+![image](https://github.com/user-attachments/assets/16fe0755-d51c-44f7-b21f-2ddafcda9023)
+
 
 ➢ Learning Model 
 
 Learning Model for the 2D–3D Mapping [ GNN (Graph Neural Network) ]
 ➢ Convert the 3D STEP file into a graph representation to prepare for GNN-based learning.
+
 ➢ A GNN regression model is trained to learn from 3D graph inputs and view-matching scores derived in Step 1.
+
 ➢ Once trained, the model can predict matching scores for new 3D shapes, i.e., infer which 2D views are likely to appear in the drawing.
+
 ➢ Based on the predicted matching scores, the system can suggest optimal 2D drafting strategies for unseen 3D models.
 
-![image](https://github.com/user-attachments/assets/6748ed03-928e-47f0-90aa-ed6d5c94b660)
+<img width="1387" alt="image" src="https://github.com/user-attachments/assets/1ba9d365-a85c-40f3-ab9d-5036d86a6f78" />
 
 
 ➢ Results and Feature work ( Projection )
@@ -96,7 +105,8 @@ features did not contribute meaningfully to accuracy improvement.
 
 ➢ Future Work
 1. By using the positional data learned from the 3D model, we adopt a 3D-based learning approach instead of training on individual projection views.
-To improve accuracy and avoid repeated dimensions that appear across multiple views, we aim to develop an integrated and consistent 2D drafting
+   
+2. To improve accuracy and avoid repeated dimensions that appear across multiple views, we aim to develop an integrated and consistent 2D drafting
 system.
 
 

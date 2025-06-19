@@ -27,6 +27,7 @@
 ## 2 - 1. Learning Data & Method (Projection Step)
 
 ➢ Input Format : 3D CAD files: .stp, .step
+
 ➢ Output Format : 2D DXF files with separete view
 
 ➢ Method 
@@ -65,6 +66,8 @@ avoid duplicates.
 ## 2 - 2. Learning Data & Method (Dimensioning)
 
 ➢ Input Format : 2D AutoCAD File: .dxf(result from projection step)
+
+➢ Output Format : 2D Dimension Prediction results
 
 ➢ Method 
 

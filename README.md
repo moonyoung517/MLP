@@ -46,7 +46,14 @@ The process of converting 3D into 2D that best represents 3D
 ➢ Learning Model 
 
 Learning Model for the 2D–3D Mapping [ GNN (Graph Neural Network) ]
+
 ➢ Convert the 3D STEP file into a graph representation to prepare for GNN-based learning.
+  
+  - Node = Face center (x, y, z), normal vector (nx, ny, nz), area (A)
+  
+  - Edge = Shared boundary between adjacent faces
+  
+  - Format = PyTorch Geometric Data(x, edge_index)
 
 ➢ A GNN regression model is trained to learn from 3D graph inputs and view-matching scores derived in Step 1.
 
@@ -54,7 +61,7 @@ Learning Model for the 2D–3D Mapping [ GNN (Graph Neural Network) ]
 
 ➢ Based on the predicted matching scores, the system can suggest optimal 2D drafting strategies for unseen 3D models.
 
-<img width="1387" alt="image" src="https://github.com/user-attachments/assets/1ba9d365-a85c-40f3-ab9d-5036d86a6f78" />
+<img width="1387" alt="image" src="https://github.com/user-attachments/assets/b28bbcdd-1989-41df-98be-c6df8cb2cc28" />
 
 
 ➢ Results and Feature work ( Projection )
